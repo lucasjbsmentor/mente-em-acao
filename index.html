@@ -2,56 +2,55 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mente em Ação</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      background: black;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
-      font-family: 'Arial Black', sans-serif;
-      text-align: center;
-      overflow: hidden;
-    }
-    .container {
-      position: relative;
-      height: 100vh;
-      width: 100vw;
-    }
-    video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-    .text-overlay {
-      position: absolute;
-      top: 20px;
-      width: 100%;
-      z-index: 1;
       text-align: center;
       padding: 20px;
-      font-size: 1.8em;
-      text-shadow: 2px 2px 10px black;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .frase {
+      font-style: italic;
+      margin: 20px 0;
+    }
+
+    video {
+      margin: 30px auto;
+      width: 80%;
+      max-width: 600px;
+      border: 3px solid white;
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <video autoplay muted loop playsinline>
-      <source src="video.mp4" type="video/mp4" />
-      Seu navegador não suporta a reprodução de vídeo.
-    </video>
-    <div class="text-overlay">Esse vídeo vai te tirar da zona de conforto</div>
+  <h1>Mente em Ação 🔥</h1>
+  <p>Esse é o começo da sua transformação. Toda grande mudança começa na mente.</p>
+
+  <div class="frase">
+    “Você não é obrigado a ser hoje quem você era ontem.” — Desconhecido
+  </div>
+
+  <video controls autoplay muted>
+    <source src="video.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeo.
+  </video>
+
+  <div class="frase">
+    “Quando sua mente muda, sua vida muda. Ação é a chave.”
   </div>
 </body>
 </html>
-
